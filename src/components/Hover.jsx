@@ -16,9 +16,7 @@ const Hover = () => {
         height: "300px",
         background: !isHovering ? "red" : "green",
       }}
-    >
-      <button onClick={() => console.log(ref.current)}>Click</button>
-    </div>
+    ></div>
   );
 };
 
