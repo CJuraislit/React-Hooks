@@ -3,6 +3,7 @@ import useInput from "./hooks/useInput";
 import Hover from "./components/Hover";
 import useHover from "./hooks/useHover";
 import { useRef } from "react";
+import List from "./components/List";
 
 function App() {
   const ref = useRef();
@@ -10,15 +11,7 @@ function App() {
 
   return (
     <>
-      <Hover />
-      <div
-        ref={ref}
-        style={{
-          width: "300px",
-          height: "300px",
-          background: !isBlackHovering ? "black" : "blue",
-        }}
-      ></div>
+      <List />
     </>
   );
 }
